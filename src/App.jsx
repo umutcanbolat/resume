@@ -1,10 +1,12 @@
 import React from 'react';
-import 'paper-css/paper.min.css';
+import './App.css';
+import { SocialLinks } from './sections';
 
 function App() {
   return (
     <section className="sheet padding-10mm">
       <h1
+        id="title"
         style={{
           width: 'fit-content',
           margin: '0 auto',
@@ -12,7 +14,9 @@ function App() {
       >
         Umut Canbolat
       </h1>
-      <div className="social-links">link</div>
+      <div className="social-links">
+        <SocialLinks />
+      </div>
     </section>
   );
 }

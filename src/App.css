@@ -1,0 +1,10 @@
+@import '~paper-css/paper.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
+h1 {
+  font-family: noto-serif;
+}
+
+#title {
+  font-size: 2.2rem;
+}
