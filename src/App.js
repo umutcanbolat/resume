@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "paper-css/paper.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section class="sheet padding-10mm">
+      <h1
+        style={{
+          width: "fit-content",
+          margin: "0 auto",
+        }}
+      >
+        Umut Canbolat
+      </h1>
+      <div className="social-links"></div>
+    </section>
   );
 }
 
