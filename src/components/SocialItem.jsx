@@ -1,13 +1,37 @@
 import React from 'react';
+import styled from 'styled-components';
 
-export default function SocialItem({ image, text, link }) {
-  console.log(image, text, link);
+const StyledSocialItem = styled.div`
+  svg {
+    font-size: 1.3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    padding-left: 0.4rem;
+  }
+
+  .social-item {
+    width: fit-content;
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+
+  color: black;
+`;
+
+export default function SocialItem({ image, text, href }) {
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer">
+    <StyledSocialItem>
       <div className="social-item">
         {image}
-        {text}
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          {text}
+        </a>
       </div>
-    </a>
+    </StyledSocialItem>
   );
 }

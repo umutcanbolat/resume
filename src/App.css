@@ -1,8 +1,8 @@
 @import '~paper-css/paper.min.css';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@900&display=swap');
 
 h1 {
-  font-family: noto-serif;
+  font-family: 'Noto Serif KR', serif;
 }
 
 #title {
