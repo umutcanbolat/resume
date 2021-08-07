@@ -7,6 +7,7 @@ const StyledSectionHeader = styled.div`
     align-items: center;
     display: flex;
     border-bottom: 1px solid black;
+    margin-bottom: 0.8rem;
   }
 
   svg {
@@ -15,7 +16,10 @@ const StyledSectionHeader = styled.div`
   }
 
   h2 {
-    margin: 0.2rem;
+    margin: 0.2rem 0.2rem 0 0;
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    font-size: 1.4rem;
   }
 `;
 

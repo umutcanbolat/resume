@@ -7,7 +7,6 @@ const StyledSocialItem = styled.div`
   }
 
   a {
-    text-decoration: none;
     color: black;
     padding-left: 0.4rem;
     font-size: 0.9rem;

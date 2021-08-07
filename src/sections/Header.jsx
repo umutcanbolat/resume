@@ -13,6 +13,8 @@ const StyledHeader = styled.div`
     width: fit-content;
     margin: 0 auto;
     font-family: 'Crimson Text', serif;
+    margin-top: -0.4rem;
+    margin-bottom: 0.5rem;
   }
 `;
 
