@@ -10,7 +10,7 @@ const StyledSocialLinks = styled.div`
   flex-wrap: wrap;
 
   .item {
-    padding: 0.3rem 0.5rem;
+    padding: 0.3rem 0.44rem;
   }
 `;
 
