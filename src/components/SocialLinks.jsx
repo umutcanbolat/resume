@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaEnvelope, FaGithub, FaGlobe, FaLinkedin } from 'react-icons/fa';
-import { SocialItem } from '../components';
+import SocialItem from './SocialItem';
 
 const StyledSocialLinks = styled.div`
   display: flex;

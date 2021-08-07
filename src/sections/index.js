@@ -1,2 +1,2 @@
 /* eslint-disable import/prefer-default-export */
-export { default as SocialLinks } from './SocialLinks';
+export { default as Header } from './Header';
