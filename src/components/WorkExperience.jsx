@@ -2,10 +2,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Timeline } from 'antd';
+import { getFormattedDate } from '../utils/dateUtils';
 
 const StyledWorkExperience = styled.div`
+  h3 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 0.8em;
+  }
   .timeline {
-    margin-left: 0.5rem;
+    margin-left: -0.9rem;
   }
 `;
 
@@ -31,6 +37,7 @@ export default function WorkExperience({ companyName, companyUrl, children }) {
 }
 
 const StyledRole = styled.div`
+  font-size: 0.9em;
   .title {
     display: flex;
     justify-content: space-between;
@@ -47,21 +54,32 @@ const StyledRole = styled.div`
 
   .location {
     color: gray;
+    margin-top: -0.22em;
+  }
+
+  .years {
+    font-style: italic;
+  }
+
+  .details {
+    margin-top: 0.5rem;
   }
 `;
 
-const Role = ({ name, location, startDate, endDate }) => {
+const Role = ({ name, location, startDate, endDate, children }) => {
   return (
     <StyledRole>
       <header>
         <div className="title">
           <h4>{name}</h4>
-          <span>{`${startDate.getFullYear()} - ${
-            endDate ? endDate.getFullYear() : 'present'
+          <span className="years">{`${getFormattedDate(startDate)} - ${
+            endDate ? getFormattedDate(endDate) : 'present'
           }`}</span>
         </div>
         <span className="location">{location}</span>
       </header>
+
+      <div className="details">{children}</div>
     </StyledRole>
   );
 };

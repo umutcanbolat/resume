@@ -9,7 +9,7 @@ const StyledSocialItem = styled.div`
   a {
     color: black;
     padding-left: 0.4rem;
-    font-size: 0.9rem;
+    font-size: 0.85em;
     font-family: 'DM Mono', monospace;
   }
 
