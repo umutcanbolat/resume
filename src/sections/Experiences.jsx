@@ -44,18 +44,117 @@ const data = [
           <>
             Development of a <b>paywall</b> solution for digital newspapers. This new solution
             increased the conversion rate significantly while signing up <b>more recurring users</b>
-            . (Tested initially on Swedish newspaper <b>Dagens Nyheter</b>)
+            . (Tested initially on Swedish newspaper Dagens Nyheter)
           </>,
           <>
             Implementation of a completely new user experience for direct debit by enabling the
             usage of <b>Klarna User Accounts</b>.
           </>,
           <>
-            Automated front-end testing with <b>Testcafe</b> and <b>Jest</b>.
+            Automated front-end testing with <b>Testcafe</b> and <b>Jest</b>, back-end testing with{' '}
+            <b>Groovy</b>, <b>Spock Framework</b> and <b>WireMock</b>..
+          </>,
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    company: 'Huawei',
+    url: 'https://www.huawei.com',
+    roles: [
+      {
+        id: 1,
+        role: 'R&D Asst. Software Engineer',
+        location: 'Istanbul, Turkey',
+        startDate: new Date(2018, 9),
+        endDate: new Date(2020, 1),
+        descriptionItems: [
+          <>
+            I worked on the development of a CMS portal as a back-end engineer.
+            <ul key="AppGallery" className="role-description">
+              <li>
+                The system was used by maintainers of the <b>AppGallery</b> application market, to
+                manage Android apps published by developers worldwide.
+              </li>
+              <li>
+                The system was written in <b>Java</b> and consisted several <b>microservices</b>.
+              </li>
+            </ul>
           </>,
           <>
-            End-to-end and unit testing backend with <b>Groovy</b>, <b>Spock Framework</b> and{' '}
-            <b>WireMock</b>.
+            I&apos;ve developed data visualization web applications for mobile carriers.
+            <ul key="SmartCare" className="role-description">
+              <li>
+                Used <b>React.js</b>, <b>TypeScript</b> and <b>Apache Echarts</b> on the front-end
+                and <b>Spring</b> at the back-end.
+              </li>
+              <li>
+                Worked on the development of an internal front-end framework with built-in
+                centralized state management.
+              </li>
+            </ul>
+          </>,
+        ],
+      },
+    ],
+  },
+  {
+    id: 3,
+    company: 'OBSS',
+    url: 'https://obss.com.tr',
+    roles: [
+      {
+        id: 1,
+        role: 'Jr. Software Developer',
+        location: 'Kocaeli, Turkey',
+        startDate: new Date(2017, 10),
+        endDate: new Date(2018, 5),
+        descriptionItems: [
+          <>
+            Designed and developed a risk measuring <b>UWP</b> app with <b>C#.NET</b> for Turkey’s
+            biggest insurance company Anadolu Sigorta.
+          </>,
+        ],
+      },
+    ],
+  },
+  {
+    id: 3,
+    company: 'Adam Mickiewicz University',
+    url: 'https://ai.wmi.amu.edu.pl/',
+    roles: [
+      {
+        id: 1,
+        role: 'Intern, Research Assistant',
+        location: 'Poznań, Poland',
+        startDate: new Date(2017, 5),
+        endDate: new Date(2017, 8),
+        descriptionItems: [
+          <>
+            Developed a corpus quality evaluation software using <b>Java</b> and <b>Prolog</b> as a
+            continuation of the research project &quot;OCAS&quot;.
+          </>,
+        ],
+      },
+    ],
+  },
+  {
+    id: 4,
+    company: 'OBSS',
+    url: 'https://obss.com.tr',
+    roles: [
+      {
+        id: 1,
+        role: 'Jr. Software Developer',
+        location: 'Kocaeli, Turkey',
+        startDate: new Date(2017, 3),
+        endDate: new Date(2017, 5),
+        descriptionItems: [
+          <>Developed a large scale banking web service for YapiKredi Bank.</>,
+          <>
+            Migrated existing <b>PL/SQL</b> codes into <b>Java Web Services</b> within{' '}
+            <b>Spring Framework</b>.
           </>,
         ],
       },
@@ -67,11 +166,22 @@ const StyledExperiences = styled.div`
   ul.role-description {
     list-style-type: disc;
     padding-left: 1.5rem;
-    font-size: 0.92em;
   }
 
-  li.role-item:not(:last-child) {
-    margin-bottom: 0.32em;
+  .role-description > li:not(:last-child) {
+    margin-bottom: 0.22em;
+  }
+
+  .role-description > li {
+    font-size: 0.75rem;
+  }
+
+  .ant-timeline-item {
+    padding-bottom: 10px;
+  }
+
+  .ant-timeline-item-last {
+    padding-bottom: 0;
   }
 `;
 

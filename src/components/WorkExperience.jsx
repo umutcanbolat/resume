@@ -62,7 +62,7 @@ const StyledRole = styled.div`
   }
 
   .details {
-    margin-top: 0.5rem;
+    margin-top: 0.17rem;
   }
 `;
 
