@@ -11,7 +11,7 @@ const StyledWorkExperience = styled.div`
     margin-bottom: 0.8em;
   }
   .timeline {
-    margin-left: -0.9rem;
+    margin-left: 0.5rem;
   }
 `;
 
