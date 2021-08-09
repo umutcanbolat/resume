@@ -22,8 +22,8 @@ const data = [
             <b>Spring Boot</b> with <b>Java 11</b>.
           </>,
           <>
-            Handling the post-purchase communications. <b>Email/SMS/Push</b> send-outs with{' '}
-            <b>Apache Kafka</b>.
+            Handling the post-purchase communications. <b>Email/SMS/Push</b> send-outs using{' '}
+            <b>Apache Kafka</b> and <b>React.js</b>.
           </>,
           <>
             Creating <b>monitoring/alarming</b> dashboards using <b>Datadog</b>.
@@ -182,6 +182,7 @@ const StyledExperiences = styled.div`
 
   .ant-timeline-item-last {
     padding-bottom: 0;
+    margin-bottom: -0.2rem;
   }
 `;
 
