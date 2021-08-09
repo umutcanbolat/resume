@@ -5,6 +5,9 @@ import { Timeline } from 'antd';
 import { getFormattedDate } from '../utils/dateUtils';
 
 const StyledWorkExperience = styled.div`
+  &:not(:last-child) {
+    margin-bottom: 0.5em;
+  }
   h3 {
     font-family: 'Oxygen', sans-serif;
     font-size: 0.9rem;
@@ -16,29 +19,53 @@ const StyledWorkExperience = styled.div`
 `;
 
 export default function WorkExperience({ companyName, companyUrl, children }) {
-  return (
-    <StyledWorkExperience>
-      <h3>
-        <a href={companyUrl} target="_blank" rel="noopener noreferrer">
-          {companyName}
-        </a>
-      </h3>
-      <div className="timeline">
-        <Timeline>
-          {children.map((c, i) => (
-            <Timeline.Item key={i} color="gray">
-              {c}
-            </Timeline.Item>
-          ))}
-        </Timeline>
-      </div>
-    </StyledWorkExperience>
-  );
+  let content;
+  if (children.length > 1) {
+    content = (
+      <>
+        <h3>
+          <a href={companyUrl} target="_blank" rel="noopener noreferrer">
+            {companyName}
+          </a>
+        </h3>
+        <div className="timeline">
+          <Timeline>
+            {children.map((c, i) => (
+              <Timeline.Item key={i} color="gray">
+                {c}
+              </Timeline.Item>
+            ))}
+          </Timeline>
+        </div>
+      </>
+    );
+  } else {
+    const {
+      name: roleName,
+      location,
+      startDate,
+      endDate,
+      children: roleChildren,
+    } = children[0].props;
+    content = (
+      <SingleRoleWorkExperience
+        companyName={companyName}
+        companyUrl={companyUrl}
+        roleName={roleName}
+        location={location}
+        startDate={startDate}
+        endDate={endDate}
+      >
+        {roleChildren}
+      </SingleRoleWorkExperience>
+    );
+  }
+  return <StyledWorkExperience>{content}</StyledWorkExperience>;
 }
 
 const StyledRole = styled.div`
   font-size: 0.9em;
-  .title {
+  .heading {
     display: flex;
     justify-content: space-between;
   }
@@ -70,8 +97,8 @@ const Role = ({ name, location, startDate, endDate, children }) => {
   return (
     <StyledRole>
       <header>
-        <div className="title">
-          <h4>{name}</h4>
+        <div className="heading">
+          <h4 className="role-title">{name}</h4>
           <span className="years">{`${getFormattedDate(startDate)} - ${
             endDate ? getFormattedDate(endDate) : 'present'
           }`}</span>
@@ -85,3 +112,37 @@ const Role = ({ name, location, startDate, endDate, children }) => {
 };
 
 WorkExperience.Role = Role;
+
+const StyledSingleRoleWorkExperience = styled.div`
+  .role-title {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+`;
+
+const SingleRoleWorkExperience = ({
+  companyName,
+  companyUrl,
+  roleName,
+  location,
+  startDate,
+  endDate,
+  children,
+}) => {
+  const name = (
+    <>
+      <span>{roleName} • </span>
+      <a href={companyUrl} target="_blank" rel="noopener noreferrer">
+        {companyName}
+      </a>
+    </>
+  );
+  return (
+    <StyledSingleRoleWorkExperience>
+      <Role name={name} location={location} startDate={startDate} endDate={endDate}>
+        {children}
+      </Role>
+    </StyledSingleRoleWorkExperience>
+  );
+};
