@@ -161,7 +161,7 @@ export default {
         {
           id: 1,
           role: 'Computer Science',
-          location: 'Erasmus+ Exchange',
+          location: "Bachelor's Degree • Erasmus+ Exchange",
           startDate: new Date(2015, 8),
           endDate: new Date(2016, 1),
         },
