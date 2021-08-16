@@ -1,0 +1,23 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.162.0/containers/javascript-node
+{
+    "name": "Node.js",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "VARIANT": "14"
+        }
+    },
+    "extensions": [
+        "coenraads.bracket-pair-colorizer-2",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "orta.vscode-jest",
+        "davidanson.vscode-markdownlint",
+        "esbenp.prettier-vscode",
+        "visualstudioexptteam.vscodeintellicode",
+        "vscode-icons-team.vscode-icons"
+    ],
+    "postCreateCommand": "yarn install",
+    "remoteUser": "node"
+}
