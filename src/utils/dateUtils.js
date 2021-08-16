@@ -6,12 +6,19 @@
  * @returns {string} the formatted date string.
  *
  */
-export const getFormattedDate = (date) => {
+export const getFormattedDate = (date, dateFormat) => {
   if (date === undefined) {
     return undefined;
   }
 
-  const month = date.toLocaleString('default', { month: 'short' });
   const year = date.getFullYear();
-  return `${month}. ${year}`;
+  const month = date.toLocaleString('default', { month: 'short' });
+
+  switch (dateFormat) {
+    case 'year':
+      return `${year}`;
+    case 'month':
+    default:
+      return `${month}. ${year}`;
+  }
 };

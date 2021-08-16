@@ -28,7 +28,7 @@ const StyledList = styled.div`
   }
 `;
 
-export default function ExperienceList({ title, icon, data }) {
+export default function ExperienceList({ title, icon, data, dateFormat = 'month' }) {
   return (
     <StyledList>
       <SectionHeader title={title} icon={icon} />
@@ -41,6 +41,7 @@ export default function ExperienceList({ title, icon, data }) {
               location={location}
               startDate={startDate}
               endDate={endDate}
+              dateFormat={dateFormat}
             >
               <ul className="role-description">
                 {descriptionItems?.map((item, i) => (

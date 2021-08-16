@@ -45,6 +45,7 @@ export default function WorkExperience({ companyName, companyUrl, children }) {
       location,
       startDate,
       endDate,
+      dateFormat,
       children: roleChildren,
     } = children[0].props;
     content = (
@@ -55,6 +56,7 @@ export default function WorkExperience({ companyName, companyUrl, children }) {
         location={location}
         startDate={startDate}
         endDate={endDate}
+        dateFormat={dateFormat}
       >
         {roleChildren}
       </SingleRoleWorkExperience>
@@ -93,23 +95,21 @@ const StyledRole = styled.div`
   }
 `;
 
-const Role = ({ name, location, startDate, endDate, children }) => {
-  return (
-    <StyledRole>
-      <header>
-        <div className="heading">
-          <h4 className="role-title">{name}</h4>
-          <span className="years">{`${getFormattedDate(startDate)} - ${
-            endDate ? getFormattedDate(endDate) : 'present'
-          }`}</span>
-        </div>
-        <span className="location">{location}</span>
-      </header>
+const Role = ({ name, location, startDate, endDate, children, dateFormat = 'month' }) => (
+  <StyledRole>
+    <header>
+      <div className="heading">
+        <h4 className="role-title">{name}</h4>
+        <span className="years">{`${getFormattedDate(startDate, dateFormat)} - ${
+          endDate ? getFormattedDate(endDate, dateFormat) : 'present'
+        }`}</span>
+      </div>
+      <span className="location">{location}</span>
+    </header>
 
-      <div className="details">{children}</div>
-    </StyledRole>
-  );
-};
+    <div className="details">{children}</div>
+  </StyledRole>
+);
 
 WorkExperience.Role = Role;
 
@@ -128,6 +128,7 @@ const SingleRoleWorkExperience = ({
   location,
   startDate,
   endDate,
+  dateFormat,
   children,
 }) => {
   const name = (
@@ -140,7 +141,13 @@ const SingleRoleWorkExperience = ({
   );
   return (
     <StyledSingleRoleWorkExperience>
-      <Role name={name} location={location} startDate={startDate} endDate={endDate}>
+      <Role
+        name={name}
+        location={location}
+        startDate={startDate}
+        endDate={endDate}
+        dateFormat={dateFormat}
+      >
         {children}
       </Role>
     </StyledSingleRoleWorkExperience>

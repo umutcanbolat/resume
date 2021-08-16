@@ -2,7 +2,7 @@
 import React from 'react';
 
 export default {
-  workExperience: [
+  experiences: [
     {
       id: 1,
       company: 'Klarna Bank AB',
@@ -118,7 +118,7 @@ export default {
       ],
     },
     {
-      id: 3,
+      id: 4,
       company: 'Adam Mickiewicz University',
       url: 'https://ai.wmi.amu.edu.pl/',
       roles: [
@@ -134,6 +134,36 @@ export default {
               a continuation of the research project &quot;OCAS&quot;.
             </>,
           ],
+        },
+      ],
+    },
+  ],
+  education: [
+    {
+      id: 1,
+      company: 'Kocaeli University',
+      url: 'https://kocaeli.edu.tr',
+      roles: [
+        {
+          id: 1,
+          role: 'Computer Engineering',
+          location: "Bachelor's Degree",
+          startDate: new Date(2014, 8),
+          endDate: new Date(2018, 5),
+        },
+      ],
+    },
+    {
+      id: 2,
+      company: 'Adam Mickiewicz University',
+      url: 'https://ai.wmi.amu.edu.pl/',
+      roles: [
+        {
+          id: 1,
+          role: 'Computer Science',
+          location: 'Erasmus+ Exchange',
+          startDate: new Date(2015, 8),
+          endDate: new Date(2016, 1),
         },
       ],
     },
