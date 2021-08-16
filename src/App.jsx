@@ -1,13 +1,18 @@
 import React from 'react';
+import { GrMagic } from 'react-icons/gr';
+import { Header } from './sections';
+import { ExperienceList } from './components';
+
 import 'antd/dist/antd.css';
 import './App.css';
-import { Header, Experiences } from './sections';
+
+import data from './static/data';
 
 function App() {
   return (
     <section className="sheet padding-10mm">
       <Header />
-      <Experiences />
+      <ExperienceList title="Experience" icon={<GrMagic />} data={data.workExperience} />
     </section>
   );
 }
