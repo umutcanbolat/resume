@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { SocialLinks } from '../components';
 
 const StyledHeader = styled.div`
+  padding-bottom: 0.8rem;
   h1 {
     font-size: 2.2rem;
     width: fit-content;
@@ -12,7 +13,7 @@ const StyledHeader = styled.div`
   p {
     width: fit-content;
     margin: 0 auto;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Noto Serif', serif;
     margin-top: -0.4rem;
     margin-bottom: 0.5rem;
   }

@@ -5,7 +5,7 @@ export default {
   experiences: [
     {
       id: 1,
-      company: 'Klarna Bank AB',
+      company: 'Klarna',
       url: 'https://www.klarna.com',
       roles: [
         {
@@ -16,15 +16,15 @@ export default {
           endDate: undefined,
           descriptionItems: [
             <>
-              Development of the post-purchase operations of direct debit payment method using{' '}
-              <b>Spring Boot</b> with <b>Java 11</b>.
+              Development of the post-purchase operations of direct debit payment method with{' '}
+              <mark>Spring Boot</mark> and <mark>Java 11</mark>.
             </>,
             <>
-              Handling the post-purchase communications. <b>Email/SMS/Push</b> send-outs using{' '}
-              <b>Apache Kafka</b> and <b>React.js</b>.
+              Handling the post-purchase communications. Email/SMS/Push send-outs using{' '}
+              <mark>Apache Kafka</mark> and <mark>React.js</mark>.
             </>,
             <>
-              Creating <b>monitoring/alarming</b> dashboards using <b>Datadog</b>.
+              Creating monitoring/alarming dashboards using <mark>Datadog</mark>.
             </>,
           ],
         },
@@ -36,21 +36,22 @@ export default {
           endDate: new Date(2021, 5),
           descriptionItems: [
             <>
-              Worked as a full-stack engineer using <b>React.js</b> on the front-end and{' '}
-              <b>Java 11</b> with <b>DropWizard</b> at the back-end.
+              Worked as a full-stack engineer using <mark>React.js</mark> on the front-end and{' '}
+              <mark>Java 11</mark> at the back-end.
             </>,
             <>
-              Development of a <b>paywall</b> solution for digital newspapers. This new solution
-              increased the conversion rate significantly while signing up{' '}
-              <b>more recurring users</b>. (Tested initially on Swedish newspaper Dagens Nyheter)
+              Development of a paywall solution for digital newspapers. This new solution increased
+              the conversion rate significantly while signing up more recurring users. (Tested
+              initially on Swedish newspaper Dagens Nyheter)
             </>,
             <>
               Implementation of a completely new user experience for direct debit by enabling the
-              usage of <b>Klarna User Accounts</b>.
+              usage of Klarna User Accounts.
             </>,
             <>
-              Automated front-end testing with <b>Testcafe</b> and <b>Jest</b>, back-end testing
-              with <b>Groovy</b>, <b>Spock Framework</b> and <b>WireMock</b>..
+              Automated front-end testing with <mark>Testcafe</mark> and <mark>Jest</mark>, back-end
+              testing with <mark>Groovy</mark>, <mark>Spock Framework</mark> and{' '}
+              <mark>WireMock</mark>.
             </>,
           ],
         },
@@ -72,11 +73,12 @@ export default {
               I worked on the development of a CMS portal as a back-end engineer.
               <ul key="AppGallery" className="role-description">
                 <li>
-                  The system was used by maintainers of the <b>AppGallery</b> application market, to
-                  manage Android apps published by developers worldwide.
+                  The system was used by maintainers of the AppGallery application market, to manage
+                  Android apps published by developers worldwide.
                 </li>
                 <li>
-                  The system was written in <b>Java</b> and consisted several <b>microservices</b>.
+                  The system was written in <mark>Java</mark> and consisted several{' '}
+                  <mark>microservices</mark>.
                 </li>
               </ul>
             </>,
@@ -84,8 +86,9 @@ export default {
               I&apos;ve developed data visualization web applications for mobile carriers.
               <ul key="SmartCare" className="role-description">
                 <li>
-                  Used <b>React.js</b>, <b>TypeScript</b> and <b>Apache Echarts</b> on the front-end
-                  and <b>Spring</b> at the back-end.
+                  Used <mark>React.js</mark>, <mark>TypeScript</mark> and{' '}
+                  <mark>Apache Echarts</mark> on the front-end and <mark>Spring</mark> at the
+                  back-end.
                 </li>
                 <li>
                   Worked on the development of an internal front-end framework with built-in
@@ -110,8 +113,8 @@ export default {
           endDate: new Date(2018, 5),
           descriptionItems: [
             <>
-              Designed and developed a risk measuring <b>UWP</b> app with <b>C#.NET</b> for Turkey’s
-              biggest insurance company Anadolu Sigorta.
+              Designed and developed a risk measuring <mark>UWP</mark> app with <mark>C#.NET</mark>{' '}
+              for Turkey’s biggest insurance company Anadolu Sigorta.
             </>,
           ],
         },
@@ -130,8 +133,8 @@ export default {
           endDate: new Date(2017, 8),
           descriptionItems: [
             <>
-              Developed a corpus quality evaluation software using <b>Java</b> and <b>Prolog</b> as
-              a continuation of the research project &quot;OCAS&quot;.
+              Developed a corpus quality evaluation software using <mark>Java</mark> and{' '}
+              <mark>Prolog</mark> as a continuation of the research project OCAS.
             </>,
           ],
         },

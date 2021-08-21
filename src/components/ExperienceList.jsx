@@ -15,7 +15,7 @@ const StyledList = styled.div`
   }
 
   .role-description > li {
-    font-size: 0.75rem;
+    font-size: 0.79rem;
   }
 
   .ant-timeline-item {

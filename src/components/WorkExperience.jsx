@@ -6,15 +6,19 @@ import { getFormattedDate } from '../utils/dateUtils';
 
 const StyledWorkExperience = styled.div`
   &:not(:last-child) {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.9em;
   }
   h3 {
     font-family: 'Oxygen', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+
     margin-bottom: 0.8em;
   }
   .timeline {
     margin-left: 0.5rem;
+  }
+  h3 > a {
+    color: black;
   }
 `;
 
@@ -79,6 +83,8 @@ const StyledRole = styled.div`
 
   h4 {
     margin: 0;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 0.95rem;
   }
 
   .location {
@@ -116,7 +122,7 @@ WorkExperience.Role = Role;
 const StyledSingleRoleWorkExperience = styled.div`
   .role-title {
     font-family: 'Oxygen', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 0;
   }
 `;

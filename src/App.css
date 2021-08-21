@@ -1,16 +1,18 @@
 @import '~paper-css/paper.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap');
 
 h1,
 h2 {
   font-family: 'Noto Serif KR', serif;
 }
 
-a,
-a:hover {
-  text-decoration: none;
-  color: unset;
+mark {
+  color: #0050b3;
+  background-color: unset;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.05em;
 }

@@ -9,9 +9,9 @@ const StyledSectionHeader = styled.div`
 
   h2 {
     margin: 0;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.45rem;
     font-weight: bold;
-    font-size: 1.4rem;
   }
 `;
 
