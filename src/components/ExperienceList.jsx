@@ -28,10 +28,10 @@ const StyledList = styled.div`
   }
 `;
 
-export default function ExperienceList({ title, icon, data, dateFormat = 'month' }) {
+export default function ExperienceList({ title, data, dateFormat = 'month' }) {
   return (
     <StyledList>
-      <SectionHeader title={title} icon={icon} />
+      <SectionHeader title={title} />
       {data.map(({ id, company, url, roles }) => (
         <WorkExperience key={id} companyName={company} companyUrl={url}>
           {roles.map(({ id: roleId, role, location, startDate, endDate, descriptionItems }) => (

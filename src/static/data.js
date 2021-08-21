@@ -168,4 +168,23 @@ export default {
       ],
     },
   ],
+  personalProjects: [
+    {
+      name: 'Instant Username Search',
+      source: 'https://www.github.com/instantusername/instant-username-search',
+      about:
+        'Checks if a username is available on more than 100 social media sites. Monthly 45k+ active users.',
+    },
+    {
+      name: 'Autofillr',
+      source: 'https://github.com/umutcanbolat/Autofillr',
+      about:
+        'A browser extension that fills registration forms with randomly but consistently generated fake data.',
+    },
+    {
+      name: 'Unrepeat',
+      source: 'https://github.com/umutcanbolat/unrepeat',
+      about: "The missing inverse of the javascript's repeat method.",
+    },
+  ],
 };
