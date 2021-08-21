@@ -1,8 +1,12 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import styled from 'styled-components';
+import Highlighter from 'react-highlight-words';
+
 import SectionHeader from './SectionHeader';
 import WorkExperience from './WorkExperience';
+
+import TechKeywords from '../static/techKeywords.json';
 
 const StyledList = styled.div`
   ul.role-description {
@@ -34,24 +38,38 @@ export default function ExperienceList({ title, data, dateFormat = 'month' }) {
       <SectionHeader title={title} />
       {data.map(({ id, company, url, roles }) => (
         <WorkExperience key={id} companyName={company} companyUrl={url}>
-          {roles.map(({ id: roleId, role, location, startDate, endDate, descriptionItems }) => (
-            <WorkExperience.Role
-              key={roleId}
-              name={role}
-              location={location}
-              startDate={startDate}
-              endDate={endDate}
-              dateFormat={dateFormat}
-            >
-              <ul className="role-description">
-                {descriptionItems?.map((item, i) => (
-                  <li key={i} className="role-item">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </WorkExperience.Role>
-          ))}
+          {roles.map(
+            ({ id: roleId, role, location, startDate, endDate, descriptions, projects }) => (
+              <WorkExperience.Role
+                key={roleId}
+                name={role}
+                location={location}
+                startDate={startDate}
+                endDate={endDate}
+                dateFormat={dateFormat}
+              >
+                <ul className="role-description">
+                  {descriptions?.map((item, i) => (
+                    <li key={i} className="role-item">
+                      <Highlighter searchWords={TechKeywords} textToHighlight={item} />
+                    </li>
+                  ))}
+                  {projects?.map(({ name, about, descriptions: projectItems }) => (
+                    <li key={name} className="role-item">
+                      {about}
+                      <ul className="role-description">
+                        {projectItems?.map((item, i) => (
+                          <li key={i} className="role-item">
+                            <Highlighter searchWords={TechKeywords} textToHighlight={item} />
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                </ul>
+              </WorkExperience.Role>
+            ),
+          )}
         </WorkExperience>
       ))}
     </StyledList>

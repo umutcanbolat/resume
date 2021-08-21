@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import Highlighter from 'react-highlight-words';
 import { FiGithub, FiChrome, FiGlobe } from 'react-icons/fi';
 import { ImNpm } from 'react-icons/im';
+
+import TechKeywords from '../static/techKeywords.json';
 
 const StyledDescribedItem = styled.div`
   ul {
@@ -43,7 +46,7 @@ const icons = {
   npm: <ImNpm />,
 };
 
-export default function DescribedItem({ name, description, links }) {
+export default function DescribedItem({ name, descriptions, links }) {
   return (
     <StyledDescribedItem>
       <header>
@@ -58,7 +61,11 @@ export default function DescribedItem({ name, description, links }) {
           ))}
         </ul>
       </header>
-      <p>{description}</p>
+      {descriptions.map((desc) => (
+        <p key={desc}>
+          <Highlighter searchWords={TechKeywords} textToHighlight={desc} />
+        </p>
+      ))}
     </StyledDescribedItem>
   );
 }

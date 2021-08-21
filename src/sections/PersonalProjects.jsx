@@ -9,8 +9,8 @@ export default function PersonalProjects({ data }) {
   return (
     <StyledProjects>
       <SectionHeader title="Personal Projects" />
-      {data.map(({ name, description, links }) => (
-        <DescribedItem key={name} name={name} description={description} links={links} />
+      {data.map(({ name, descriptions, links }) => (
+        <DescribedItem key={name} name={name} descriptions={descriptions} links={links} />
       ))}
     </StyledProjects>
   );
