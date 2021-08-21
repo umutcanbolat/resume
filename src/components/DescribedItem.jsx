@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Highlighter from 'react-highlight-words';
 import { FiGithub, FiChrome, FiGlobe } from 'react-icons/fi';
 import { ImNpm } from 'react-icons/im';
 
-import TechKeywords from '../static/techKeywords.json';
+import Highlighter from './Highlighter';
 
 const StyledDescribedItem = styled.div`
   ul {
@@ -63,7 +62,7 @@ export default function DescribedItem({ name, descriptions, links }) {
       </header>
       {descriptions.map((desc) => (
         <p key={desc}>
-          <Highlighter searchWords={TechKeywords} textToHighlight={desc} />
+          <Highlighter text={desc} />
         </p>
       ))}
     </StyledDescribedItem>

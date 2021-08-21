@@ -1,12 +1,10 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import styled from 'styled-components';
-import Highlighter from 'react-highlight-words';
 
 import SectionHeader from './SectionHeader';
 import WorkExperience from './WorkExperience';
-
-import TechKeywords from '../static/techKeywords.json';
+import Highlighter from './Highlighter';
 
 const StyledList = styled.div`
   ul.role-description {
@@ -51,16 +49,16 @@ export default function ExperienceList({ title, data, dateFormat = 'month' }) {
                 <ul className="role-description">
                   {descriptions?.map((item, i) => (
                     <li key={i} className="role-item">
-                      <Highlighter searchWords={TechKeywords} textToHighlight={item} />
+                      <Highlighter text={item} />
                     </li>
                   ))}
                   {projects?.map(({ name, about, descriptions: projectItems }) => (
                     <li key={name} className="role-item">
-                      {about}
+                      <Highlighter text={about} />
                       <ul className="role-description">
                         {projectItems?.map((item, i) => (
                           <li key={i} className="role-item">
-                            <Highlighter searchWords={TechKeywords} textToHighlight={item} />
+                            <Highlighter text={item} />
                           </li>
                         ))}
                       </ul>
