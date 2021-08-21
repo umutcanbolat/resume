@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaEnvelope, FaGithub, FaGlobe, FaLinkedin } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { VscGlobe } from 'react-icons/vsc';
+import { FiMail, FiGithub } from 'react-icons/fi';
+
 import SocialItem from './SocialItem';
 
 const StyledSocialLinks = styled.div`
@@ -17,25 +20,25 @@ const StyledSocialLinks = styled.div`
 const socialData = [
   {
     id: 'github',
-    image: <FaGithub />,
+    image: <FiGithub />,
     text: '/umutcanbolat',
     href: 'https://www.github.com/umutcanbolat',
   },
   {
     id: 'linkedin',
-    image: <FaLinkedin />,
+    image: <FaLinkedinIn />,
     text: '/umutcanbolat',
     href: 'https://www.linkedin.com/in/umutcanbolat',
   },
   {
     id: 'web',
-    image: <FaGlobe />,
+    image: <VscGlobe />,
     text: 'umutcanbolat.com',
     href: 'https://www.umutcanbolat.com',
   },
   {
     id: 'email',
-    image: <FaEnvelope />,
+    image: <FiMail />,
     text: 'hello@umutcanbolat.com',
     href: 'mailto:hello@umutcanbolat.com',
   },

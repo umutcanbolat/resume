@@ -9,9 +9,7 @@ const StyledWorkExperience = styled.div`
     margin-bottom: 0.9em;
   }
   h3 {
-    font-family: 'Oxygen', sans-serif;
     font-size: 1.1rem;
-
     margin-bottom: 0.8em;
   }
   .timeline {
@@ -83,12 +81,11 @@ const StyledRole = styled.div`
 
   h4 {
     margin: 0;
-    font-family: 'Oxygen', sans-serif;
     font-size: 0.95rem;
   }
 
   .location {
-    color: gray;
+    color: dimgray;
     margin-top: -0.22em;
   }
 
@@ -121,8 +118,6 @@ WorkExperience.Role = Role;
 
 const StyledSingleRoleWorkExperience = styled.div`
   .role-title {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 1rem;
     margin-bottom: 0;
   }
 `;

@@ -174,20 +174,38 @@ export default {
   personalProjects: [
     {
       name: 'Instant Username Search',
-      source: 'https://www.github.com/instantusername/instant-username-search',
-      about:
-        'Checks if a username is available on more than 100 social media sites. Monthly 45k+ active users.',
+      description: (
+        <>
+          A username search engine which checks more than 100 social media sites. Monthly 45k+
+          active users.
+          <br />
+          <b>Tech stack:</b> React.js, Spring Boot, Kubernetes, Docker, GitHub pages, Github
+          Actions.
+        </>
+      ),
+      links: {
+        github: 'https://www.github.com/instantusername/instant-username-search',
+        web: 'https://www.instantusername.com',
+      },
     },
     {
       name: 'Autofillr',
-      source: 'https://github.com/umutcanbolat/Autofillr',
-      about:
-        'A browser extension that fills registration forms with randomly but consistently generated fake data.',
+      description:
+        'A Chrome extension that fills registration forms with randomly but consistently generated fake data. This drastically decrased the time requeired for testing/validating user flows.',
+      links: {
+        github: 'https://github.com/umutcanbolat/Autofillr',
+        chromeWebStore:
+          'https://chrome.google.com/webstore/detail/autofillr/jcgfleiagjfjlgdpbignhphpdcbjplco',
+      },
     },
     {
       name: 'Unrepeat',
-      source: 'https://github.com/umutcanbolat/unrepeat',
-      about: "The missing inverse of the javascript's repeat method.",
+      description:
+        "The missing inverse of the javascript's repeat method written in Typescript. Available at NPM.",
+      links: {
+        github: 'https://github.com/umutcanbolat/unrepeat',
+        npm: 'https://www.npmjs.com/package/unrepeat',
+      },
     },
   ],
 };
