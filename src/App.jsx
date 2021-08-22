@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, PersonalProjects } from './sections';
+import { Header, PersonalProjects, Publications } from './sections';
 import { ExperienceList } from './components';
 
 import 'antd/dist/antd.css';
@@ -17,6 +17,7 @@ function App() {
       </section>
       <section className="sheet padding-10mm">
         <PersonalProjects data={data.personalProjects} />
+        <Publications data={data.publications} />
       </section>
     </>
   );

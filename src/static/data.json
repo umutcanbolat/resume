@@ -160,5 +160,25 @@
         "npm": "https://www.npmjs.com/package/unrepeat"
       }
     }
+  ],
+  "publications": [
+    {
+      "name": "Saturation Tests in Application to Validation of Opinion Corpora: A Tool for Corpora Processing",
+      "descriptions": [
+        "We proposed tools for collection and validation of empirical data in the form of a corpus. Data is collected from booking.com users' hotel reviews."
+      ],
+      "date": "2018-06-16",
+      "publisher": "Springer",
+      "link": "https://link.springer.com/chapter/10.1007/978-3-319-93782-3_27"
+    },
+    {
+      "name": "TSCC: a New Tool to Create Lexically Saturated Text Subcorpora",
+      "descriptions": [
+        "A text processing tool to valuate lexical saturation of text corpora, where lexical saturation refers to a state in which it is hard to find new lexemes outside the corpus."
+      ],
+      "date": "2018-05-07",
+      "publisher": "LREC 2018",
+      "link": "http://lrec-conf.org/workshops/lrec2018/W6/pdf/6_W6.pdf"
+    }
   ]
 }
