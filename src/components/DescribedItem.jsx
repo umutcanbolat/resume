@@ -36,6 +36,10 @@ const StyledDescribedItem = styled.div`
   h3 {
     margin: 0;
   }
+
+  p {
+    margin-bottom: 0.5em;
+  }
 `;
 
 const icons = {

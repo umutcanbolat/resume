@@ -68,7 +68,6 @@ export default function WorkExperience({ companyName, companyUrl, children }) {
 }
 
 const StyledRole = styled.div`
-  font-size: 0.9em;
   .heading {
     display: flex;
     justify-content: space-between;

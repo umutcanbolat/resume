@@ -21,3 +21,7 @@ mark {
   font-family: 'JetBrains Mono', monospace;
   font-size: 1.05em;
 }
+
+.description {
+  font-size: 0.79rem;
+}
