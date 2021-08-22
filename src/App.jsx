@@ -5,7 +5,7 @@ import { ExperienceList } from './components';
 import 'antd/dist/antd.css';
 import './App.css';
 
-import data from './static/data';
+import data from './static/data.json';
 
 function App() {
   return (

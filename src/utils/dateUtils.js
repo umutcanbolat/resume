@@ -2,17 +2,15 @@
 /**
  * Returns a date string like `Sep. 2021`.
  *
- * @param {Date} date
+ * @param {string} date string
  * @returns {string} the formatted date string.
  *
  */
 export const getFormattedDate = (date, dateFormat) => {
-  if (date === undefined) {
-    return undefined;
-  }
+  const dateObj = new Date(date);
 
-  const year = date.getFullYear();
-  const month = date.toLocaleString('default', { month: 'short' });
+  const year = dateObj.getFullYear();
+  const month = dateObj.toLocaleString('default', { month: 'short' });
 
   switch (dateFormat) {
     case 'year':
