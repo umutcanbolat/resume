@@ -34,6 +34,6 @@ jobs:
             ${{ runner.os }}-yarn-
       - name: build
         run: |
-          yarn
+          yarn install --frozen-lockfile
           yarn build
           yarn pdf
