@@ -25,7 +25,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx src/",
     "lint:fix": "eslint --ext .js,.jsx src/ --fix",
-    "pdf": "yarn build && node ./scripts/printToPdf.js",
+    "pdf": "node ./scripts/printToPdf.js",
+    "pages": "gh-pages -d build",
     "ci:release": "release-it --ci",
     "ci:release:dry": "yarn ci:release --dry-run"
   },
@@ -50,5 +51,6 @@
     "eslint-plugin-react": "^7.24.0",
     "prettier": "^2.3.2",
     "release-it": "^14.11.5"
-  }
+  },
+  "homepage": "https://umutcanbolat.com/resume"
 }
