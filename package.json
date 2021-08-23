@@ -22,7 +22,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx src/",
-    "lint:fix": "eslint --ext .js,.jsx src/ --fix"
+    "lint:fix": "eslint --ext .js,.jsx src/ --fix",
+    "serve": "serve -s build",
+    "print": "wait-on http://localhost:5000 && node ./scripts/printToPdf.js",
+    "serveAndPrint": "run-p serve print"
   },
   "browserslist": {
     "production": [
@@ -37,11 +40,17 @@
     ]
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^3.3.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
-    "prettier": "^2.3.2"
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2",
+    "puppeteer": "^10.2.0",
+    "release-it": "^14.11.5",
+    "serve": "^12.0.0",
+    "wait-on": "^6.0.0"
   }
 }
