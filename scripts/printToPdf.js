@@ -7,7 +7,7 @@ const puppeteer = require('puppeteer');
     waitUntil: 'networkidle2',
   });
   await page.pdf({
-    path: 'Umut Canbolat CV.pdf',
+    path: './output/Umut Canbolat CV.pdf',
     format: 'a4',
     preferCSSPageSize: true,
   });
