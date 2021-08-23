@@ -19,6 +19,6 @@ module.exports = {
     },
   },
   hooks: {
-    'after:bump': 'yarn build && yarn serveAndPrint',
+    'after:bump': 'yarn pdf',
   },
 };
