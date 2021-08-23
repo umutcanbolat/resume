@@ -2,8 +2,8 @@ name: build
 
 on:
   push:
-    branches:
-      - '*'
+    branches-ignore:
+      - master # on master, there are bump and deploy scripts which already build the project.
   pull_request:
     branches:
       - master
