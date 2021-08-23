@@ -25,7 +25,9 @@
     "lint:fix": "eslint --ext .js,.jsx src/ --fix",
     "serve": "serve -s build",
     "print": "node ./scripts/printToPdf.js",
-    "serveAndPrint": "run-p serve print"
+    "serveAndPrint": "run-p serve print",
+    "ci:release": "release-it --ci",
+    "ci:release:dry": "yarn ci:release --dry-run"
   },
   "browserslist": {
     "production": [
