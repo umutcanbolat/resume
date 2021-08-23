@@ -4,6 +4,9 @@ import styled from 'styled-components';
 import { SectionHeader, DescribedItem } from '../components';
 
 const StyledProjects = styled.div`
+  & {
+    margin-bottom: 1.5rem;
+  }
   .project:not(:last-child) {
     margin-bottom: 1rem;
   }
