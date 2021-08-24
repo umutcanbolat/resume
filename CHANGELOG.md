@@ -1,3 +1,10 @@
+## [0.2.4](https://github.com/umutcanbolat/resume/compare/0.2.3...0.2.4) (2021-08-24)
+
+
+### Bug Fixes
+
+* wording ([586f360](https://github.com/umutcanbolat/resume/commit/586f360c2af369c44348ba8de12f541d9480366f))
+
 ## [0.2.3](https://github.com/umutcanbolat/resume/compare/0.2.2...0.2.3) (2021-08-24)
 
 ## [0.2.2](https://github.com/umutcanbolat/resume/compare/0.2.1...0.2.2) (2021-08-24)
