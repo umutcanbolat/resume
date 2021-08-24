@@ -13,7 +13,7 @@
           "descriptions": [
             "Development of the post-purchase operations of direct debit payment method with Spring Boot and Java 11.",
             "Handling the post-purchase communications. Email/SMS/Push send-outs using Apache Kafka and React.js.",
-            "Creating monitoring/alarming dashboards using Datadog."
+            "Creating monitoring/alarming dashboards in Datadog."
           ]
         },
         {
@@ -153,7 +153,7 @@
     {
       "name": "Unrepeat",
       "descriptions": [
-        "The missing inverse of the javascript's repeat method. Written in Typescript. Available at NPM."
+        "The missing inverse of the javascript's repeat method. Written in Typescript. Available as NPM package."
       ],
       "links": {
         "github": "https://github.com/umutcanbolat/unrepeat",
