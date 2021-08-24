@@ -1,3 +1,5 @@
+## [0.2.7](https://github.com/umutcanbolat/resume/compare/0.2.6...0.2.7) (2021-08-24)
+
 ## [0.2.6](https://github.com/umutcanbolat/resume/compare/0.2.5...0.2.6) (2021-08-24)
 
 ## [0.2.5](https://github.com/umutcanbolat/resume/compare/0.2.4...0.2.5) (2021-08-24)
