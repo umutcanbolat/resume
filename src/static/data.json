@@ -159,6 +159,17 @@
         "github": "https://github.com/umutcanbolat/unrepeat",
         "npm": "https://www.npmjs.com/package/unrepeat"
       }
+    },
+    {
+      "name": "Resume",
+      "descriptions": [
+        "The source code of this resume. Reads the data from a JSON file, generates a web page and a PDF form of this resume from it.",
+        "Tech stack: React.js, Puppeteer, GitHub pages, Github Actions."
+      ],
+      "links": {
+        "github": "https://www.github.com/umutcanbolat/resume",
+        "web": "https://www.umutcanbolat.com/resume"
+      }
     }
   ],
   "publications": [

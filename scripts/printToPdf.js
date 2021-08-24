@@ -10,7 +10,7 @@ async function toPdf() {
     waitUntil: 'networkidle2',
   });
   await page.pdf({
-    path: './output/Umut-Canbolat-CV.pdf',
+    path: './output/Umut-Canbolat-Resume.pdf',
     format: 'a4',
     preferCSSPageSize: true,
   });
