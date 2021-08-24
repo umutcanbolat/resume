@@ -1,17 +1,16 @@
 /* eslint-disable no-console */
-const http = require('http');
 const fs = require('fs');
-const handler = require('serve-handler');
+const express = require('express');
 const puppeteer = require('puppeteer');
 
 async function toPdf() {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto('http://localhost:5000', {
+  await page.goto('http://localhost:5000/resume', {
     waitUntil: 'networkidle2',
   });
   await page.pdf({
-    path: './output/Umut Canbolat CV.pdf',
+    path: './output/Umut-Canbolat-CV.pdf',
     format: 'a4',
     preferCSSPageSize: true,
   });
@@ -20,12 +19,11 @@ async function toPdf() {
   await browser.close();
 }
 
-const server = http.createServer((request, response) => {
-  return handler(request, response, { public: 'build' });
-});
+const app = express();
+app.use('/resume', express.static('./build'));
 
-server.listen(5000, async () => {
-  console.log('✅ Server is running at http://localhost:5000');
+const server = app.listen(5000, async () => {
+  console.log('✅ Static page is being served at http://localhost:5000/resume');
 
   fs.mkdir('./output', { recursive: true }, (err) => {
     if (err) {
@@ -35,6 +33,6 @@ server.listen(5000, async () => {
 
   await toPdf();
 
-  console.log('✅ Shutting down the server.');
+  console.log('✅ Shutting the server down.');
   server.close();
 });
