@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/umutcanbolat/resume/compare/0.2.11...0.3.0) (2021-08-24)
+
+
+### Features
+
+* add new personal project ([b4f27d6](https://github.com/umutcanbolat/resume/commit/b4f27d630477cdcf4f26e7b4d46e9a6c93e341bd))
+
 ## [0.2.11](https://github.com/umutcanbolat/resume/compare/0.2.10...0.2.11) (2021-08-24)
 
 ## [0.2.10](https://github.com/umutcanbolat/resume/compare/0.2.9...0.2.10) (2021-08-24)
