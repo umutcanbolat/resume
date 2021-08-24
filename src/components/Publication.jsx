@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+
+import Highlighter from './Highlighter';
 import { getFormattedDate } from '../utils/dateUtils';
 
 const StyledPublication = styled.div`
@@ -44,7 +46,11 @@ export default function Publication({ name, descriptions, date, publisher, link 
         </div>
       </header>
 
-      <div className="description">{descriptions}</div>
+      <div className="description">
+        {descriptions.map((desc) => (
+          <Highlighter key={desc} text={desc} />
+        ))}
+      </div>
     </StyledPublication>
   );
 }
