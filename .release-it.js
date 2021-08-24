@@ -20,7 +20,7 @@ module.exports = {
   },
   hooks: {
     'after:bump': 'yarn build',
-    'after:git:release': 'yarn pages',
+    'before:git:release': 'yarn pages',
     'before:github:release': 'yarn pdf',
   },
 };
