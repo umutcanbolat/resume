@@ -3,7 +3,8 @@ name: build
 on:
   push:
     branches-ignore:
-      - master # on master, there are bump and deploy scripts which already build the project.
+      - master # on master, there is release action which already builds the project.
+      - gh-pages
   pull_request:
     branches:
       - master
