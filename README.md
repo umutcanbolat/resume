@@ -1,7 +1,7 @@
 # Resume
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/umutcanbolat/resume?label=latest%20release&logo=github&style=flat-square)](https://github.com/umutcanbolat/resume/releases/latest)
-![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/umutcanbolat/resume?color=light-green&label=Latest%20Update&logo=Adobe%20Acrobat%20Reader&style=flat-square)
+[![GitHub Release Date](https://img.shields.io/github/release-date/umutcanbolat/resume?color=light-green&label=latest%20update&logo=Adobe%20Acrobat%20Reader&style=flat-square)](https://github.com/umutcanbolat/resume/releases/latest)
 [![License](https://img.shields.io/github/license/umutcanbolat/resume?logoColor=white&logo=gnu&style=flat-square)](LICENSE)
 
 A React project to automatically generate my resume.
