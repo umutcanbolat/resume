@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/umutcanbolat/resume/compare/0.3.0...0.4.0) (2021-08-24)
+
+
+### Features
+
+* update meta description ([7691003](https://github.com/umutcanbolat/resume/commit/769100337a4670f6654083bd54ca805daacbc42c))
+
 # [0.3.0](https://github.com/umutcanbolat/resume/compare/0.2.11...0.3.0) (2021-08-24)
 
 
