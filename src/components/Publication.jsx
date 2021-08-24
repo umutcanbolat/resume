@@ -21,9 +21,10 @@ const StyledPublication = styled.div`
 
   .date {
     font-style: italic;
+    color: dimgray;
   }
 
-  .details {
+  .description {
     margin-top: 0.17rem;
   }
 `;
@@ -43,7 +44,7 @@ export default function Publication({ name, descriptions, date, publisher, link 
         </div>
       </header>
 
-      <div className="details">{descriptions}</div>
+      <div className="description">{descriptions}</div>
     </StyledPublication>
   );
 }

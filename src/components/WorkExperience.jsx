@@ -90,6 +90,7 @@ const StyledRole = styled.div`
 
   .years {
     font-style: italic;
+    color: dimgray;
   }
 
   .details {
