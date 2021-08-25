@@ -12,7 +12,7 @@
           "startDate": "2021-06",
           "descriptions": [
             "Development of the post-purchase operations of direct debit payment method with Spring Boot and Java 11.",
-            "Handling the post-purchase communications. Email/SMS/Push send-outs using Apache Kafka and React.js.",
+            "Handling the post-purchase communications. Email/SMS/Push templating and send-outs using React and Apache Kafka.",
             "Creating monitoring/alarming dashboards in Datadog."
           ]
         },
