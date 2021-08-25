@@ -1,3 +1,10 @@
+## [0.4.1](https://github.com/umutcanbolat/resume/compare/0.4.0...0.4.1) (2021-08-25)
+
+
+### Bug Fixes
+
+* make explanation more clear ([9fe6392](https://github.com/umutcanbolat/resume/commit/9fe6392aa9e9d16c6965e7fa24773ad2ef7d7b21))
+
 # [0.4.0](https://github.com/umutcanbolat/resume/compare/0.3.0...0.4.0) (2021-08-24)
 
 
