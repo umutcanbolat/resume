@@ -1,3 +1,10 @@
+# [0.5.0](https://github.com/umutcanbolat/resume/compare/0.4.1...0.5.0) (2022-04-21)
+
+
+### Features
+
+* 🎸 read name and title from data.json ([cbd0d4d](https://github.com/umutcanbolat/resume/commit/cbd0d4dde2c54f89e7429822187a35fdd2c5b367))
+
 ## [0.4.1](https://github.com/umutcanbolat/resume/compare/0.4.0...0.4.1) (2021-08-25)
 
 
