@@ -19,11 +19,11 @@ const StyledHeader = styled.div`
   }
 `;
 
-export default function Header() {
+export default function Header({ name, title }) {
   return (
     <StyledHeader>
-      <h1>Umut Canbolat</h1>
-      <p>Full-Stack Software Engineer</p>
+      <h1>{name}</h1>
+      <p>{title}</p>
       <SocialLinks />
     </StyledHeader>
   );

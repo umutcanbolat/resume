@@ -8,16 +8,18 @@ import './App.css';
 import data from './static/data.json';
 
 function App() {
+  const { name, title, experiences, education, personalProjects, publications } = data;
+
   return (
     <>
       <section className="sheet padding-10mm">
-        <Header />
-        <ExperienceList title="Experience" data={data.experiences} />
-        <ExperienceList title="Education" dateFormat="year" data={data.education} />
+        <Header name={name} title={title} />
+        <ExperienceList title="Experience" data={experiences} />
+        <ExperienceList title="Education" dateFormat="year" data={education} />
       </section>
       <section className="sheet padding-10mm">
-        <PersonalProjects data={data.personalProjects} />
-        <Publications data={data.publications} />
+        <PersonalProjects data={personalProjects} />
+        <Publications data={publications} />
       </section>
     </>
   );
