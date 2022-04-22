@@ -1,3 +1,10 @@
+# [0.6.0](https://github.com/umutcanbolat/resume/compare/0.5.0...0.6.0) (2022-04-22)
+
+
+### Features
+
+* 🎸 read social data from data.json ([7827649](https://github.com/umutcanbolat/resume/commit/78276499eb881376e9eb2dcde418a354eb31d2df))
+
 # [0.5.0](https://github.com/umutcanbolat/resume/compare/0.4.1...0.5.0) (2022-04-21)
 
 
