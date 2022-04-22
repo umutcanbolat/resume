@@ -17,37 +17,19 @@ const StyledSocialLinks = styled.div`
   }
 `;
 
-const socialData = [
-  {
-    id: 'github',
-    image: <FiGithub />,
-    text: '/umutcanbolat',
-    href: 'https://www.github.com/umutcanbolat',
-  },
-  {
-    id: 'linkedin',
-    image: <FaLinkedinIn />,
-    text: '/umutcanbolat',
-    href: 'https://www.linkedin.com/in/umutcanbolat',
-  },
-  {
-    id: 'web',
-    image: <VscGlobe />,
-    text: 'umutcanbolat.com',
-    href: 'https://www.umutcanbolat.com',
-  },
-  {
-    id: 'email',
-    image: <FiMail />,
-    text: 'hello@umutcanbolat.com',
-    href: 'mailto:hello@umutcanbolat.com',
-  },
-];
+const socialIcons = {
+  github: <FiGithub />,
+  linkedin: <FaLinkedinIn />,
+  web: <VscGlobe />,
+  email: <FiMail />,
+};
 
-export default function SocialLinks() {
-  const links = socialData.map(({ id, image, text, href }) => (
+const getImageComponent = (socialId) => socialIcons[socialId] || socialIcons.web;
+
+export default function SocialLinks({ data }) {
+  const links = data.map(({ id, text, href }) => (
     <div key={id} className="item">
-      <SocialItem image={image} text={text} href={href} />
+      <SocialItem image={getImageComponent(id)} text={text} href={href} />
     </div>
   ));
   return <StyledSocialLinks>{links}</StyledSocialLinks>;

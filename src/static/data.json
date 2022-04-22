@@ -1,6 +1,28 @@
 {
   "name": "Umut Canbolat",
   "title": "Full-Stack Software Engineer",
+  "social": [
+    {
+      "id": "github",
+      "text": "/umutcanbolat",
+      "href": "https://www.github.com/umutcanbolat"
+    },
+    {
+      "id": "linkedin",
+      "text": "/umutcanbolat",
+      "href": "https://www.linkedin.com/in/umutcanbolat"
+    },
+    {
+      "id": "web",
+      "text": "umutcanbolat.com",
+      "href": "https://www.umutcanbolat.com"
+    },
+    {
+      "id": "email",
+      "text": "hello@umutcanbolat.com",
+      "href": "mailto:hello@umutcanbolat.com"
+    }
+  ],
   "experiences": [
     {
       "id": 1,

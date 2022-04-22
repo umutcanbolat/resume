@@ -19,12 +19,12 @@ const StyledHeader = styled.div`
   }
 `;
 
-export default function Header({ name, title }) {
+export default function Header({ name, title, social }) {
   return (
     <StyledHeader>
       <h1>{name}</h1>
       <p>{title}</p>
-      <SocialLinks />
+      <SocialLinks data={social} />
     </StyledHeader>
   );
 }

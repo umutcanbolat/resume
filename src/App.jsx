@@ -8,12 +8,12 @@ import './App.css';
 import data from './static/data.json';
 
 function App() {
-  const { name, title, experiences, education, personalProjects, publications } = data;
+  const { name, title, social, experiences, education, personalProjects, publications } = data;
 
   return (
     <>
       <section className="sheet padding-10mm">
-        <Header name={name} title={title} />
+        <Header name={name} title={title} social={social} />
         <ExperienceList title="Experience" data={experiences} />
         <ExperienceList title="Education" dateFormat="year" data={education} />
       </section>
