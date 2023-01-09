@@ -46,12 +46,7 @@
           "role": "Software Engineer II",
           "location": "Giessen, Germany",
           "startDate": "2021-06",
-          "endDate": "2022-01",
-          "descriptions": [
-            "Development of the post-purchase operations of direct debit payment method with Spring Boot and Java 11.",
-            "Handling the post-purchase communications. Email/SMS/Push templating and send-outs using React and Apache Kafka.",
-            "Creating monitoring/alarming dashboards in Datadog."
-          ]
+          "endDate": "2022-01"
         },
         {
           "id": 2,
@@ -60,9 +55,9 @@
           "startDate": "2020-03",
           "endDate": "2021-06",
           "descriptions": [
-            "Worked as a full-stack engineer using React.js on the front-end and Java 11 at the back-end.",
+            "Full-stack software Development using React.js on the front-end and Java 11 at the back-end.",
             "Development of a paywall solution for digital newspapers. This new solution increased the conversion rate significantly while signing up more recurring users. (Tested initially on Swedish newspaper Dagens Nyheter)",
-            "Implementation of a completely new user experience for direct debit by enabling the usage of Klarna User Accounts.",
+            "Implementation of a completely new user experience for direct debit payment method by enabling the usage of Klarna User Accounts.",
             "Automated front-end testing with Testcafe and Jest, back-end testing with Groovy, Spock Framework and WireMock."
           ]
         }
