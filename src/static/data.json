@@ -31,9 +31,22 @@
       "roles": [
         {
           "id": 1,
+          "role": "Software Engineer II @ Authentication",
+          "location": "Berlin, Germany",
+          "startDate": "2022-01",
+          "descriptions": [
+            "Global customer authentication and KYC solutions for 150m+ Klarna users.",
+            "Full-stack software development on Node.js and React.",
+            "Security focused design, architecture and development.",
+            "DevOps with Jenkins, Docker, AWS."
+          ]
+        },
+        {
+          "id": 1,
           "role": "Software Engineer II",
           "location": "Giessen, Germany",
           "startDate": "2021-06",
+          "endDate": "2022-01",
           "descriptions": [
             "Development of the post-purchase operations of direct debit payment method with Spring Boot and Java 11.",
             "Handling the post-purchase communications. Email/SMS/Push templating and send-outs using React and Apache Kafka.",
@@ -83,40 +96,6 @@
                 "Worked on the development of an internal front-end framework with built-in centralized state management."
               ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "company": "OBSS",
-      "url": "https://obss.com.tr",
-      "roles": [
-        {
-          "id": 1,
-          "role": "Jr. Software Developer",
-          "location": "Kocaeli, Turkey",
-          "startDate": "2017-11",
-          "endDate": "2018-06",
-          "descriptions": [
-            "Designed and developed a risk measuring UWP app with C#.NET for Turkey’s biggest insurance company Anadolu Sigorta."
-          ]
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "company": "Adam Mickiewicz University",
-      "url": "https://ai.wmi.amu.edu.pl/",
-      "roles": [
-        {
-          "id": 1,
-          "role": "Intern, Research Assistant",
-          "location": "Poznań, Poland",
-          "startDate": "2017-06",
-          "endDate": "2017-09",
-          "descriptions": [
-            "Developed a corpus quality evaluation software using Java and Prolog as a continuation of the research project OCAS."
           ]
         }
       ]
