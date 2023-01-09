@@ -1,3 +1,11 @@
+# [0.7.0](https://github.com/umutcanbolat/resume/compare/0.6.0...0.7.0) (2023-01-09)
+
+
+### Features
+
+* 🎸 add authentication@klarna ([9803b68](https://github.com/umutcanbolat/resume/commit/9803b681c5ef09676e79a513769e4cf9c23b9489))
+* 🎸 simplify previous experience ([f85818b](https://github.com/umutcanbolat/resume/commit/f85818b2cb70153bb263a8ea6b37599dd7cf4b78))
+
 # [0.6.0](https://github.com/umutcanbolat/resume/compare/0.5.0...0.6.0) (2022-04-22)
 
 
