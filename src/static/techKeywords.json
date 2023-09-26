@@ -61,5 +61,7 @@
   "eslint",
   "microservice",
   "microservices",
-  "styled components"
+  "styled components",
+  "redis",
+  "kafka"
 ]

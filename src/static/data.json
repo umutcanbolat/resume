@@ -31,25 +31,32 @@
       "roles": [
         {
           "id": 1,
+          "role": "Senior Software Engineer @ Authentication",
+          "location": "Berlin, Germany",
+          "startDate": "2023-05"
+        },
+        {
+          "id": 2,
           "role": "Software Engineer II @ Authentication",
           "location": "Berlin, Germany",
           "startDate": "2022-01",
+          "endDate": "2023-05",
           "descriptions": [
-            "Global customer authentication and KYC solutions for 150m+ Klarna users.",
-            "Full-stack software development on Node.js and React.",
-            "Security focused design, architecture and development.",
-            "DevOps with Jenkins, Docker, AWS."
+            "Authenticating 150m+ Klarna customers all over the world.",
+            "Full-stack, security focused design, architecture and development.",
+            "DevOps with Jenkins, Docker, AWS.",
+            "Node.js, React, Redis, Kafka."
           ]
         },
         {
-          "id": 1,
+          "id": 3,
           "role": "Software Engineer II",
           "location": "Giessen, Germany",
           "startDate": "2021-06",
           "endDate": "2022-01"
         },
         {
-          "id": 2,
+          "id": 4,
           "role": "Software Engineer I",
           "location": "Giessen, Germany",
           "startDate": "2020-03",
